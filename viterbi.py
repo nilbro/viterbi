@@ -1,6 +1,3 @@
-
-
-
 def encode(input_array):
     state=[0,0,0,0]
     output=[]
