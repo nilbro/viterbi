@@ -14,7 +14,9 @@ int sc_main(int argc , char *argv[] )
 	  sc_core::sc_report_handler::set_actions( "/IEEE_Std_1666/deprecated",
 	                                           sc_core::SC_DO_NOTHING );
 
-	sc_signal<sc_bit> in,out1,out2;
+
+	//sc_signal<sc_uint<8>, SC_MANY_WRITERS> bus_data;
+	sc_signal<sc_bit, SC_MANY_WRITERS> in,out1,out2;
 
 	Viterbi_Encoder e("ViterbiEncoder");
 	e.in(in);
