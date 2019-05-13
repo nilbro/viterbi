@@ -5,7 +5,7 @@
  *      Author: bro
  */
 #include "ViterbiEncoder.h"
-#include<systemc.h>
+#include <systemc.h>
 
 
 void Viterbi_Encoder::encode(void){
