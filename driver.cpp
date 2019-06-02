@@ -1,17 +1,22 @@
-/*
- * driver.cpp
+/**
+ * @file driver.cpp
+ * @author bro
+ * @date May 1, 2019
+ * @brief Driver implementation for the Viterbi Encoder
  *
- *  Created on: May 1, 2019
- *      Author: bro
+ * The file has the input bits to the encoder
  */
 
-
-
-//file: driver.cpp
-// this file contains the process definitions
 #include "driver.h"
 
-void driver::prc_driver()
+/**
+ * This method will be used to drive input bits to the Encoder
+ * @author bro
+ * @param in The Input Bit
+ * @date May 1, 2019
+ */
+
+void driver::encoder_driver()
 {
 	in = sc_bit('1');
 	wait(10, SC_NS);

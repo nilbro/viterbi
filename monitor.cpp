@@ -1,16 +1,16 @@
-/*
- * monitor.cpp
+/**
+ * @file monitor.cpp
+ * @author bro
+ * @date May 1, 2019
+ * @brief Monitor or display for the Viterbi Encoder
  *
- *  Created on: May 1, 2019
- *      Author: bro
+ * The file formats how the input and outputs will be displayed on screen
  */
+
 
 #include "monitor.h"
 
 void monitor::prc_monitor()
 {
-	//cout <<" At "<<sc_time_stamp()<<" input is : "<<in << endl;
-	//cout <<" The register state is " << Viterbi_Encoder::r <<endl;
-	//cout <<" The output is " <<op1<<op2 << endl;
 	cout <<" Input = "<<in<<" -->"<<" Output = "<<op1<<op2<<endl;
 };
