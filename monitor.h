@@ -16,7 +16,7 @@ SC_MODULE(monitor)
 {
 	 sc_in<sc_bit> in;
 	 sc_out<sc_bit> op1,op2;
-	 //sc_bv<3>  r;
+	 sc_in<bool> clk;
 
 void prc_monitor();
 
@@ -25,9 +25,7 @@ SC_CTOR(monitor)
 {
 
 	SC_METHOD(prc_monitor);
-	sensitive << in ;
-//whenever the i/p to the gate changes,
-//or the o/p changes, the process prc_monitor triggers
+	sensitive << clk ;
 }
 };
 

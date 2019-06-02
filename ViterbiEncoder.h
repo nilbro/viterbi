@@ -10,10 +10,9 @@
 #include<systemc.h>
 
 SC_MODULE(Viterbi_Encoder){
+	 sc_in<bool> clk;
 	 sc_in<sc_bit> in;
 	 sc_out<sc_bit> op1,op2;
-
-
 	 sc_bv<3>  r;
 
 	    // methods
@@ -22,10 +21,8 @@ SC_MODULE(Viterbi_Encoder){
 	    //Constructor
 	SC_CTOR( Viterbi_Encoder ) {
 		r = "000";
-
-
 		SC_THREAD(encode);
-	 	sensitive<< in;
+	 	sensitive<< clk;
 	    }
 };
 

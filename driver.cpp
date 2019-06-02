@@ -16,10 +16,10 @@ void driver::prc_driver()
 	in = sc_bit('1');
 	wait(10, SC_NS);
 
-	in = sc_bit('0');
+	in = sc_bit('1');
 	wait(10, SC_NS);
 
-	in = sc_bit('1');
+	in = sc_bit('0');
 	wait(10, SC_NS);
 
 	in = sc_bit('1');
